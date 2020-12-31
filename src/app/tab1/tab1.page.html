@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title [innerHtml]="title"></ion-title>
+  </ion-toolbar>
+</ion-header>                                                                                                                                                                                     
+
+<ion-content>
+    <ion-card class="welcome-card" *ngFor="let dog of dogs">
+      <ion-card-header>
+      <ion-card-title>{{dog.name}}</ion-card-title>
+        <!-- *ngIf="dog.id > 2" -->
+      </ion-card-header>
+      <ion-card-content>
+        <div class="row">
+          <div class="col">
+            <img src="assets/images/dog.jpg">
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                It is a long established fact that a reader will be distracted.
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="tag red">tag1</div>
+              </div>
+              <div class="col">
+                <div class="tag blue">tag2</div>
+              </div>
+              <div class="col">
+                <div class="tag orange">tag3</div>
+              </div>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar">
+                <div class="bar bar-80"></div>
+              </div>
+              <p>Match</p><p class="right">80%</p>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-list lines="none">
+      <ion-list-header>
+        <ion-label>Resources</ion-label>
+      </ion-list-header>
+      <ion-item href="">
+        <ion-icon slot="start" color="medium" name="build"></ion-icon>
+        <ion-label>Label</ion-label>
+      </ion-item>
+    </ion-list>
+    
+</ion-content>
